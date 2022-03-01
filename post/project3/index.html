@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Project 3 : Time series Forecasting to Optimize Manufacturing Processes  | Tahsin Mullick</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Artificial Intelligence Enabled Autonomous Smart Manufacturing Consortium">
+    <meta name="generator" content="Hugo 0.92.2" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="https://Tahsinmullick.github.io/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Project 3 : Time series Forecasting to Optimize Manufacturing Processes " />
+<meta property="og:description" content="Artificial Intelligence Enabled Autonomous Smart Manufacturing Consortium" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Tahsinmullick.github.io/post/project3/" /><meta property="article:section" content="post" />
+
+<meta property="og:site_name" content="Tahsin Mullick" />
+
+<meta itemprop="name" content="Project 3 : Time series Forecasting to Optimize Manufacturing Processes ">
+<meta itemprop="description" content="Artificial Intelligence Enabled Autonomous Smart Manufacturing Consortium">
+
+<meta itemprop="wordCount" content="2202">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project 3 : Time series Forecasting to Optimize Manufacturing Processes "/>
+<meta name="twitter:description" content="Artificial Intelligence Enabled Autonomous Smart Manufacturing Consortium"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://Tahsinmullick.github.io/images/project3_flowdiag.JPG');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://Tahsinmullick.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Tahsin Mullick
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://Tahsinmullick.github.io/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://Tahsinmullick.github.io/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://Tahsinmullick.github.io/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://Tahsinmullick.github.io/research/" title="Research page">
+              Research
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    <a href="https://twitter.com/tahsinmullick" target="_blank" class="twitter ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Project 3 : Time series Forecasting to Optimize Manufacturing Processes </h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Artificial Intelligence Enabled Autonomous Smart Manufacturing Consortium
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+      
+      <a href="https://twitter.com/share?url=https://Tahsinmullick.github.io/post/project3/&amp;text=Project%203%20:%20Time%20series%20Forecasting%20to%20Optimize%20Manufacturing%20Processes%20" class="ananke-social-link twitter no-underline" aria-label="share on Twitter">
+        
+        <span class="icon"> <svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+</span>
+        
+      </a>
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Project 3 : Time series Forecasting to Optimize Manufacturing Processes </h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p><img src="https://Tahsinmullick.github.io/images/project3_flowdiag.JPG" alt=""></p>
+<p>The work in this project is a part of the following publication, <a href="https://www.proquest.com/openview/d32ef32bbaa911d15eecb8e684487332/1?pq-origsite=gscholar&amp;cbl=51908">Blockchain 
+and 
+Artificial Intelligence Enabled Autonomous Smart
+Manufacturing Consortium</a></p>
+<p>The goal of this work was to enable time and cost based optimization of a 
+blockchain and AI enabled autonomous smart manufacturing consortium. I 
+contributed to this work in the capacity of the time series based 
+forecasting study that forms an integral part of this smart consortium. In the 
+following paragraphs I describe the idea and present the analysis I 
+conducted as proof of concept for the creation of an autonomously functioning 
+manufacturing consortium design.</p>
+<p>Recommending optimized time-cost analysis for a design build request on the 
+Cloud Manufacturing as a Service (CMaaS) server requires that we are able to 
+forecast a few critical factors that govern manufacturing requirements.</p>
+<p>This section takes a deep dive into analyzing machine learning (ML) and deep learning (DL) models that are able to make relatively strong predictions into the future and generate an optimized solution to the user.</p>
+<p>The specific factors that can help us develop an optimized solution include:</p>
+<ol>
+<li>man power availability in manufacturing sector,</li>
+<li>weekly hours worked on average by workers with respect to a particular region and</li>
+<li>unit labor cost in manufacturing specific to the region.</li>
+</ol>
+<p>A time series approach is applied to forecast on the mentioned factors. CMaaS consortiums will generate user traffic from around the world and being able to predict on time and cost of builds requested by users will help to provide optimized solutions based on user preference. This is a strong motivation for empowering the smart manufacturing consortium model with AI driven algorithms that are autonomous in nature and can factor trends and seasonality.</p>
+<h4 id="datasets">Datasets:</h4>
+<p>Chronological data pertaining to manufacturing is an essential component to develop time series models and generate optimized solution. The dataset is a key component in both ML and DL modeling to creating more precise forecasts. The datasets used in this study is an open dataset made available by [1]. The study explores five key datasets to develop forecasting models that will drive our optimization solution and yield optimized cost or time estimates. Our aim was to take advantage of the temporal nature of the datasets to factor seasonality and trend that are embedded in such types of data. Figure 1. Shows an example illustration of the unit labor cost in manufacturing in US datasets and Table 1 provides detailed information on the datasets collected their range, total number of data points and the units associated with them. The dataset’s collection frequency is either monthly or quarterly averages of their respective units. Table 1 shows that no. of points available with respect to the datasets varies with the Employment in Manufacturing at a maximum of 982 datapoints and the Unit Labor Cost in Manufacturing in the US having a minimum of 134 data points owing to the quarterly data collection procedure and restricted upper and lower bounds on the years.</p>
+<p><img src="https://Tahsinmullick.github.io/images/project3_unitlaborcostplot.png" alt="unit labor cost"></p>
+<h6 id="figure-1-unit-labor-cost-in-manufacturing-industry-in-the-us-from-1987-to-2020">Figure 1: Unit labor cost in manufacturing industry in the US from 1987 to 2020</h6>
+<h4 id="problem-statement">Problem Statement:</h4>
+<p>The problem we tackle pertains to a scenario where a user connects to the 
+smart manufacturing consortium. The user wishes to submit a work order. The 
+system takes the following inputs from the users work order:</p>
+<ol>
+<li>design file of the build,</li>
+<li>quantity of production,</li>
+<li>Material desired,</li>
+<li>choice of priority between time or cost.</li>
+</ol>
+<p>The CMaaS server takes this information and is tasked to find out the most optimized time or cost analysis based on the chronological information such as labor cost, manpower availability, material cost and any other features that might affect either the time or cost aspects. The time series models are able to provide an x-step forecast, where x, is the number of steps needed to satisfactorily provide the user with an optimized time or cost solution based on user choice.</p>
+<p>In our modeling we have considered a 12-step prediction. Our model will then be able to intelligently answer questions such as: over the upcoming months how many people are available in the workforce, how long are they willing to work or questions like the projection of material cost or growth in labor cost.  A simple system model is presented in Figure 2 showing inputs and expected outputs.</p>
+<h4 id="evaluation-metric">Evaluation Metric:</h4>
+<p>The main evaluation metric used in this study to select the optimum DL/ML based models that were designed, is RMSE. RMSE is an error estimating metric. It is the square root of the expected value of quadratic loss and is given by the Equation (1).
+<img src="https://Tahsinmullick.github.io/images/project3_rmse.JPG" alt="rmse"></p>
+<p>y_i  and (y_i ) ̂   are the true and predicted values respectively. And n is the number of observations being tested. The advantage of using RMSE as the evaluation metric lies in the fact that the result is given in terms of the original unit of the predicted value. The RMSE provides us a standard way to evaluate and compare between the models tested and informs us of the most suitable model for the respective datasets. The structure of our modeling performs a number of iterations of modeling and averages the RMSE value to form a more accurate representation of the model fit and suitability for forecasting. The goal with modeling on RMSE is to aim towards minimizing it, the models that output the lowest RMSE value are indicative of best performance overall.</p>
+<h4 id="train---test-splits">Train - Test Splits:</h4>
+<p>In time series modeling we rely on an ordered set of data. Therefore, splitting the data randomly for training and testing can cause the loss of temporal information as the chronological order of data is lost. Our goal in terms of developing models were to be able to carry out a multistep forecast in particular we were aiming to perform a 12- step prediction. Ideally, we would wish to predict into the indefinite future. However, keeping in mind data limitations and random uncertainty being introduced into data with temporal underpinnings this is not possible.</p>
+<p>To challenge our modelling, we performed a 12-step prediction on to the last 
+set of data points in our datasets. Thus, the train/test split applied in our model development was to use the last set of timed events as test candidates to evaluate model prediction capabilities and its efficacy. The devised train test split is show in Figure 2 where we see that the first column marks our Label and we have previous observations and difference between subsequent observations acting as features in chronological order.</p>
+<p><img src="https://Tahsinmullick.github.io/images/project3_traintestsplit.png" alt="train test split"></p>
+<h6 id="figure-2-traintest-split-for-time-series-univariate-data">Figure 2: Train/Test split for time series univariate data</h6>
+<p>In Figure 2, t marks current time step and n is total number of timed 
+observations. The predictions performed where on monthly frequency therefore we would be predicting monthly for monthly observe data and quarterly frequency was applied in case of the datasets where quarterly observations were recorded.</p>
+<h4 id="ml-and-dl--modeling">ML and DL  Modeling:</h4>
+<p>The challenge of developing both ML or DL models on time series data is more restrictive than that of any general machine learning model. Not only do we need to keep track of the time component of datasets, we also need to have well defined train/test split as described in the previous section and develop a validation technique. The steps involved in our modeling process include</p>
+<ol>
+<li>Train/Test Split,</li>
+<li>Forward Fold validation,</li>
+<li>Baseline modeling</li>
+<li>ML Modeling and</li>
+<li>DL modeling</li>
+</ol>
+<h5 id="forward-fold-validation">Forward Fold Validation:</h5>
+<p>The train/test split system has already been described therefore we now 
+shift our attention to the validation process used for tackling time series data. Time series data is of monthly or quarterly frequency in our case, we will use the respective months in a year as our feature inputs and predict on the last 12 months. The training dataset created in the train/test split step is now used to perform forward fold validation. Unlike normal ML or DL problems we cannot disrupt the order of the dataset and hence must resolve to creating a strategy that takes the temporal component of the dataset into account. In our case we have chosen to apply a forward fold validation strategy where in the first fold we train the model on year ‘y’ and validate on ‘y+1’ this is followed by second fold where we train the model on year ‘y’ and ‘y+1’ and validate the model on ‘y+2’ this process is repeated for the years available under our dataset. The forward fold validation strategy is illustrated in Figure 3.</p>
+<p><img src="https://Tahsinmullick.github.io/images/project3_forwardfold.png" alt="forward fold"></p>
+<h6 id="figure-3-forward-fold-validation">Figure 3: Forward fold validation</h6>
+<h5 id="baseline-modeling">Baseline Modeling:</h5>
+<p>Baseline models are used in ML and DL problems to verify how a naïve model performs without any added intelligence to it in terms of being capable of discerning patterns or trends. The performance RMSE of the baseline is used to test models in a fixed standard. This enables us to reflect on the performance of each and every model and make choices as to the best model available to a certain dataset.</p>
+<p>The baseline model in our setup is a persistence model that takes median of a subset of the prior observations in relation to the time step we are forecasting. The baseline model establishes a lower bound of a model’s performance any model that is able to outperform the baseline model can be considered as an intelligent model.</p>
+<h5 id="ml-modeling">ML Modeling:</h5>
+<p>Classical ML models were applied to the data and their performances recorded.
+In this stage of model development, we analyze across a suite of ML models and evaluate how they perform on the data. The first step in ML model development involves setting our dataset with previous observations and difference between observations as features to replicate a supervised modeling dataset. Once the dataset is established, we perform forward fold validation on the following models: linear regressor, elastic net regressor, random forest regressor, gradient boosted regressor, extra tree regressor, ada boost regressor, support vector regressor and finally xgboost regressor. Once validate we plot the RMSE values on a boxplot to select the best performing model and then perform hyperparameter tuning on them. Figure 4 is an example performance box plot of the models.
+<img src="https://Tahsinmullick.github.io/images/project3_rmse_boxplot.png" alt="project3_rmse_boxplot"></p>
+<h6 id="figure-4-model-comparison-rmse-boxplot-example">Figure 4: Model comparison RMSE boxplot example</h6>
+<h5 id="dl-modeling">DL Modeling:</h5>
+<p>Deep learning models such as multilayer perceptron (MLP), convolutional neural nets (CNN) and long short-term memory (LSTM) based recurrent neural networks (RNN) were developed in this study to model the time series data sets and improve on performance. The DL models are fed the raw data and subjected to forward fold validation as well. The end goal is to be able to predict a 12-step forecast on the dataset.</p>
+<p>Figure 5 shows the sample of the architectures and the model details that were developed for our experiments. DL models are able to see trends and patterns owing to the nature of their architecture. The MLP model implemented is a feedforward network model with a single hidden layer and single output layer with hyperparameters that include number of lag observation to use as input to the model, number of nodes to use in the hidden layer, number of epochs to train on and number of samples within each epoch after which the weights are updated.</p>
+<p>In the CNN case we define two convolutional layers for extracting features from input sequences with configurable hyperparameters such as kernels sizes and filters as additional hyperparameters. The final DL model that we experiment on is the LSTM model, which takes advantage of the internal memory and accumulate internal states when progressing across time steps, we also allow for an additional hyperparameter in the LSTM which includes a difference to establish stationarity of the dataset.</p>
+<p><img src="https://Tahsinmullick.github.io/images/project3_dlarchi.png" alt="project3_dlarchi"></p>
+<h6 id="figure-5-deep-learning-model-architecture-a-mlp-b-cnn-c-lstm">Figure 5: Deep learning model architecture (a) MLP, (b) CNN, (c) LSTM</h6>
+<h4 id="result-and-discussion">Result and Discussion:</h4>
+<p>The results of the ML and DL models are presented in this section. A time series dataset poses many challenges that are not faced in the modeling of normal data. 
+The steps mentioned in the previous section led us to generate results with respect to five key datasets mentioned. 
+<img src="https://Tahsinmullick.github.io/images/project3_resultstable.png" alt="project3_resultstable"></p>
+<p>Based on the above results we summarize our understanding of the datasets and the performances. The 12-step predicted and true forecast overlay plots are presented in Figure 6 for each of the datasets analyzed. It is our understanding that due to the nature of the dataset with trends, models such as linear regression worked well in more than one instance. MLP, CNN and LSTM also performed to a reasonable degree in those instances, but fell short of the RMSE values being generated with more traditional ML modeling.</p>
+<p><img src="https://Tahsinmullick.github.io/images/project3_plot.png" alt="project3_plot"></p>
+<p>The last segments of the datasets were used for our testing purposes and in some instances like that of the manufacturing work force data there are some abrupt dips in the data with the rest remaining more or less close to an average value of the respective units. MLP model worked best for weekly hours worked for Canada, where the trend had shorter dips and rises allowing the MLP to follow the general trend with limited deviation.</p>
+<p>Thus, the time series approach to modelling this data proved to work well and also displays that not a single model can be used to optimize on all required datasets, instead a holistic approach with a set of models must be tested. The work done in forecasting of the datasets will allow us to optimize and provide better solutions to meet user needs from the smart manufacturing consortium.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://Tahsinmullick.github.io/" >
+    &copy;  Tahsin Mullick 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    <a href="https://twitter.com/tahsinmullick" target="_blank" class="twitter ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div></div>
+  </div>
+</footer>
+
+  </body>
+</html>
