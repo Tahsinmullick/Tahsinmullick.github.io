@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>In Pursuit of Creativity and Invention on Tahsin Mullick</title>
+    <link>https://Tahsinmullick.github.io/</link>
+    <description>Recent content in In Pursuit of Creativity and Invention on Tahsin Mullick</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://Tahsinmullick.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine learning framework addressing small, longitudinal, and multimodal sensor data </title>
+      <link>https://Tahsinmullick.github.io/research/research2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Tahsinmullick.github.io/research/research2/</guid>
+      <description>Longitudinal multimodal sensor data is often noisy, small and sparse. In order to address this problem we are proposing a ML ranking framework that tries to optimize predictions from the limited quantity of data available.
+The framework
+ enables processing of various combinations of sensor fusions, uses generalized and personalized modeling approaches with appropriate cross validation strategies, and builds a tensor-based aggregation and ranking strategy for final interpretation.  </description>
+    </item>
+    
+    <item>
+      <title>Predicting Depression in Adolescents through Passive Sensing: </title>
+      <link>https://Tahsinmullick.github.io/research/research1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Tahsinmullick.github.io/research/research1/</guid>
+      <description>Depression in adults has been well explored in the area of passive sensing. However, there have been no study that solely focused on adolescents. According to National survey on drug use and health, 4.1 million U.S. adolescents have suffered from at least one major depressive episode. Only 32.3% adolescents received some form of specialize or non-specialized treatment. To address this gap we are studying how we can harness the predictive capabilities of passive sensors such as mobile phones and fitness trackers to predict depression in adolescents.</description>
+    </item>
+    
+    <item>
+      <title>Project 1: GAN based data augmentation for skin lesion dataset</title>
+      <link>https://Tahsinmullick.github.io/post/project1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Tahsinmullick.github.io/post/project1/</guid>
+      <description>Small health datasets often suffer from two key problems missing or sparse datasets or imbalanced dataset. These problems lead to overfitting. I design a study to test how GAN can help in alleviating the problems of imbalance and overfitting for small datasets.
+In the next few paragraphs I describe the dataset and study design and finally compare GAN based augmentation performance with affine tranformation based augmentation. This project showcases the exception ability of GANs to assist in prediction improvements of small datasets.</description>
+    </item>
+    
+    <item>
+      <title>Project 2: Deeplearning applied to human activity dataset with multimodal timeseries data</title>
+      <link>https://Tahsinmullick.github.io/post/project2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Tahsinmullick.github.io/post/project2/</guid>
+      <description>The dataset I chose to work with is a popular human activity recognition data that has been used in a lot of publications as means to test the performance of algorithms. It is one of the few open-sourced datasets available online.
+This section is divided into subsections that explain the dataset used, dataset preprocessing which includes addressing missing data and over-fitting strategy utilized, this is followed by baseline modeling with classical machine learning algorithms, modeling with deep learning algorithm and finally results and discussion.</description>
+    </item>
+    
+    <item>
+      <title>Project 3 : Time series Forecasting to Optimize Manufacturing Processes </title>
+      <link>https://Tahsinmullick.github.io/post/project3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Tahsinmullick.github.io/post/project3/</guid>
+      <description>The work in this project is a part of the following publication, Blockchain and Artificial Intelligence Enabled Autonomous Smart Manufacturing Consortium
+The goal of this work was to enable time and cost based optimization of a blockchain and AI enabled autonomous smart manufacturing consortium. I contributed to this work in the capacity of the time series based forecasting study that forms an integral part of this smart consortium. In the following paragraphs I describe the idea and present the analysis I conducted as proof of concept for the creation of an autonomously functioning manufacturing consortium design.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Project 1: GAN based data augmentation for skin lesion dataset | Tahsin Mullick</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Smart Health">
+    <meta name="generator" content="Hugo 0.92.2" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="https://Tahsinmullick.github.io/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Project 1: GAN based data augmentation for skin lesion dataset" />
+<meta property="og:description" content="Smart Health" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Tahsinmullick.github.io/post/project1/" /><meta property="article:section" content="post" />
+
+<meta property="og:site_name" content="Tahsin Mullick" />
+
+<meta itemprop="name" content="Project 1: GAN based data augmentation for skin lesion dataset">
+<meta itemprop="description" content="Smart Health">
+
+<meta itemprop="wordCount" content="2577">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project 1: GAN based data augmentation for skin lesion dataset"/>
+<meta name="twitter:description" content="Smart Health"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://Tahsinmullick.github.io/images/skin_backdrop.png');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://Tahsinmullick.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Tahsin Mullick
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://Tahsinmullick.github.io/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://Tahsinmullick.github.io/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://Tahsinmullick.github.io/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://Tahsinmullick.github.io/research/" title="Research page">
+              Research
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    <a href="https://twitter.com/tahsinmullick" target="_blank" class="twitter ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Project 1: GAN based data augmentation for skin lesion dataset</h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Smart Health
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+      
+      <a href="https://twitter.com/share?url=https://Tahsinmullick.github.io/post/project1/&amp;text=Project%201:%20GAN%20based%20data%20augmentation%20for%20skin%20lesion%20dataset" class="ananke-social-link twitter no-underline" aria-label="share on Twitter">
+        
+        <span class="icon"> <svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+</span>
+        
+      </a>
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Project 1: GAN based data augmentation for skin lesion dataset</h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p><img src="https://Tahsinmullick.github.io/images/skinlesion.gif" alt="">
+Small health datasets often suffer from two key problems missing or sparse
+datasets or imbalanced dataset. These problems lead to overfitting. I design a study to test how GAN can help in alleviating
+the problems of imbalance and overfitting for small datasets.</p>
+<p>In the next
+few paragraphs I describe the dataset and study design and finally compare
+GAN based augmentation performance with affine tranformation based
+augmentation. This project showcases the exception ability of GANs to assist
+in prediction improvements of small datasets.</p>
+<p>I have selected a skin cancer dataset called the human against machine (HAM1000) dataset [57]. This dataset was aimed at helping train deep neural networks for automated diagnosis of pigmented skin lesions. It has 10015 dermatoscopic images of skin lesions. There are seven classes of lesions.</p>
+<ol>
+<li>Melanocytic nevi (nv)</li>
+<li>Melanoma (mel)</li>
+<li>Benign keratosis-like lesions (bkl)</li>
+<li>Basal cell carcinoma (bcc)</li>
+<li>Actinic Keratoses (akiec)</li>
+<li>Vascular lesions (vas)</li>
+<li>Dermatofibroma (df)</li>
+</ol>
+<p><img src="https://Tahsinmullick.github.io/images/classdistribution_skinlesion.png" alt="Distribution of images per class"></p>
+<h6 id="figure-1-distribution-of-images-per-class">Figure 1: Distribution of images per class</h6>
+<p>More than 50% of the lesions are confirmed through histopathology, the ground truth for the rest of the cases is either follow-up examination, expert consensus or confirmation by in-vivo confocal microscopy.</p>
+<p>It is a large dataset therefore, necessary changes to scale it down to a smaller dataset will be made. Before the dataset manipulation can begin, I carry out initial data exploration steps.</p>
+<p>As part of data exploration, I showcase related statistics in the previous
+figure. The most important information to look for is the class distribution.
+We observe that <strong>nv</strong> is the largest class with 6705 images followed by
+<strong>mel</strong>
+with 1113 images and <strong>bkl</strong> having 1099 images, the rest are within the three
+digits. I also plot data pertaining to the overall demographics in the
+following figure. Since I have been asked to implement deep learning methods,
+I must consider the time constraint. In order to simplify the problem at
+hand I choose to use only <strong>mel</strong>, <strong>bkl</strong> and <strong>bcc</strong> classes as part of my
+data augmentation and classification experimentation.
+<img src="https://Tahsinmullick.github.io/images/demography_skinlesion.png" alt="demography_skinlesion"></p>
+<h6 id="figure-2-demographic-data-exploration">Figure 2: Demographic data exploration</h6>
+<h4 id="study-design">STUDY DESIGN:</h4>
+<p>The study is created keeping the requirements of the question in mind. In order to adhere to the requirements, set forth, I create the following structure to elaborate on:</p>
+<ul>
+<li>Dataset reduction</li>
+<li>Checking any sparsity issue within dataset</li>
+<li>Affine transformations for data augmentation</li>
+<li>Implementation of Deep Convolutional GAN (DCGAN) for data augmentation</li>
+<li>Design of Convolutional Neural Network (CNN) architecture for
+classification task</li>
+<li>Experimentation and Evaluation</li>
+<li>Results and Discussion</li>
+</ul>
+<h4 id="dataset-reduction-">DATASET REDUCTION :</h4>
+<p>The current dataset in its original form can not be considered a small dataset with 10,000 images. Therefore, we remove all the classes and only hold mel (1113), bkl (1099) and bcc (514). This brings down total training example to 2726 and converts it into a small dataset. Even then we see that the dataset is suffering from imbalance. Which means that there is a great chance for the data to overfit.</p>
+<h4 id="checking-for-sparsity-">CHECKING FOR SPARSITY :</h4>
+<p>The dataset had images with minimal empty regions. Therefore, it did not suffer from any major sparsity related issue. In order to understand if there was presence of any group of images with high sparsity which in the case with images means a lot of 0 pixels that is black pixels, I converted the data to NumPy array and checked for images with more than 50% zeros in the matrix. That would indicate that the image is suffering from sparsity issues. To mitigate effects of sparsity in such images one way is to fill in the zero values with the nearest pixel intensities a sort of nearest neighbor approach to imputing sparsity.</p>
+<h4 id="affine-transformation-for-data-augmentation-">AFFINE TRANSFORMATION FOR DATA AUGMENTATION :</h4>
+<p>The first type of augmentation that I performed was affine transformations. The goal was to create a balanced dataset where the classes will be in a ratio of 1:1:1. This can be achieved my augmenting classes that are underrepresented which in this case are bkl(1099) and bcc(514). For Bkl we produce 14 images to equal it to 1113 just like mel classes and for bcc we augment 599 more examples. This will lead to a dataset with 1:1:1 class ratio. A balanced data set will be available for training.</p>
+<p>The figure below consists of images of operations such as rotation, scaling, cropping and shear have been performed. I keep the black region in this Figure to improve clarity of understanding the affine transformations. However, I used the images own reflections to fill in any of the black regions. This was achieved with the help of Keras function ImageGenerator.
+<img src="https://Tahsinmullick.github.io/images/affinetf_skinlesion.png" alt="affinetf_skinlesion"></p>
+<h6 id="figure-3--affine-transformation-performed-on-underrepresented-classes">Figure 3 : Affine transformation performed on underrepresented classes</h6>
+<h4 id="implementation-of-deep-convolutional-gan-dcgan-for-data-augmentation-">IMPLEMENTATION OF DEEP CONVOLUTIONAL GAN (DCGAN) FOR DATA AUGMENTATION :</h4>
+<p>The next part of the augmentation has been an extreme challenge to implement. It required considerable amount of time to craft this model and adjust parameters so that it was able to generate reasonable images. The Deep Convolutional GAN (DCGAN) architecture can be simply expressed by considering two convolutional networks. One is the generator that takes in fixed seed length of random inputs and the other is the discriminator that takes the images generated by the generator and predicts fake or real.</p>
+<p>The following DCGAN architecture is inspired from [Q]. The paper provides us with information that needs to be taken into account when trying to build this model. The authors did not pre-process any training images except for scaling to the range of the tanh activation function [-1,1]. All the models used mini-batch stochastic gradient descent (SGD) with mini-batch size of 128. The weights initialized from a zero mean Normal distribution with a standard deviation of 0.02. The slope of LeakyReLU was set to 0.2 for both models. An Adam optimizer was used also a momentum was suggested.  The pooling layers were replaced by strided convolutions in discriminator and fractional strided convolution in generator.
+<img src="https://Tahsinmullick.github.io/images/evalgan_skinlesion.png" alt="evalgan_skinlesion"></p>
+<h6 id="figure-4--evaluation-in-gan">Figure 4 : Evaluation in GAN</h6>
+<p>GANs are made of two neural network architectures. The generator and discriminator.  The generator takes in a random vector seed and generates an image from that random vector seed. The discriminator accepts this image and determines a probability of the image being a real vs fake.
+The first thing to determine is the resolution of the image and its size. As GANs are GPU intensive, I chose to work on Google CoLab. The resolution I set was 96 px. Higher resolutions are possible however that will result in longer run times. As all training images need to be same size, I define it to be 32 x 32. I also set a batch size for training to be 16.</p>
+<p>With the images ready for training. I created the generator and discriminator architecture and trained them on Adam optimizer. The loss function was the next integral part of the coding the networks. The loss function allows the generator and discriminator to be trained in an adversarial way. The networks are being trained independently. Hence, they are to be trained in two separate passes. This required construction of two separate loss functions and two separate updates to the gradient. As the discriminator’s gradients are applied to decrease the discriminator’s loss, only the discriminator’s weights are updated.</p>
+<h4 id="training-the-discriminator">Training the discriminator:</h4>
+<p>The discriminator is the only network that is allowed to see the real images. The training of the generator is illustrated in the following figure. The training set for the generator is generated with an equal number of real and fake images. The real images are randomly sampled from the training data. An equal number of random images are generated from the random seeds of the generator. We denote the discriminator training set as x_dis and the y_dis is set to a value of 1 for real images and 0 for generated ones. It can be perceived as a binary classification task. y ̂_dis is the prediction made by the discriminator. For my training the DCGAN is run twice, once for the model to generate bcc class and then to generate the bkl class images.
+<img src="https://Tahsinmullick.github.io/images/discriminator_skinlesion.png" alt="discriminator_skinlesion"></p>
+<h6 id="figure-5--training-the-discriminator">Figure 5 : Training the Discriminator</h6>
+<h4 id="training-the-generator">Training the generator:</h4>
+<p>The generator training set contains x_gen that constitutes the random seeds to generate images and y_gen is set to value of 1. The reason for setting y_gen to 1 enables the generator to set that as the optimal condition to generate good images that the discriminator can be fooled on. The figure below shows the process of generator training.
+<img src="https://Tahsinmullick.github.io/images/generator_skinlesion.png" alt="generator_skinlesion"></p>
+<h6 id="figure-6--training-the-generator">Figure 6 : Training the Generator</h6>
+<h4 id="discriminator-network-architecture">Discriminator network architecture:</h4>
+<p>The discriminator network is convolutional network where the pooling layers are replaced with strided convolutions.  The network designed in this study has convolutional layers with LeakyReLU with a gradient of 0.2. The kernel size is kept to 3. Batch normalization is implemented in the intermediate layers. The dropout is set to 0.25. The final layer of the discriminator is carrying out a binary classification task and therefore consists of sigmoid activation.</p>
+<p>The model summary and the model architecture are presented in the following figures respectively.
+<img src="https://Tahsinmullick.github.io/images/discriminator_archi_skinlesion.png" alt="discriminator_archi_skinlesion"></p>
+<h6 id="figure-7--discriminator-architecture">Figure 7 : Discriminator architecture</h6>
+<h4 id="generator-network-architecture">Generator network architecture:</h4>
+<p>The generator starts of with a dense layer which is followed by convolutional layers. I also add upsampling to help the resolution in the intermediate layers. This is a network with fractional strided convolutional layers. I also added batch normalization to the generator architecture. The activation in the intermediate layer consisted of ReLu . The final layer is also a CNN with a tanh activation. The following figures show the model summary and generator architecture.
+<img src="https://Tahsinmullick.github.io/images/generator_archi_skinlesion.png" alt="generator_archi_skinlesion"></p>
+<h6 id="figure-8--generator-architecture">Figure 8 : Generator architecture</h6>
+<h4 id="dcgan-generated-images">DCGAN generated images:</h4>
+<p>The images generated by GAN for both bcc and bkl were saved at different epochs the images below show how the DCGAN progressed in reasonably good images in about 100 epochs. The images clearly show how the model is learning different attributes and improving between epochs. The first set of images are for the bcc class of which we generated 599 images. The second set is of the bkl class of which we generated 14 images.</p>
+<p><img src="https://Tahsinmullick.github.io/images/BCC_gan_images.png" alt="BCC_gan_images"></p>
+<h6 id="figure-9--bcc-class-image-generation-result-by-dcgan-at-epochs-5-50-and-99">Figure 9 : BCC class image generation result by DCGAN at epochs 5, 50 and 99</h6>
+<p>The bcc class of images show remarkable results and a very close resemblance to real bcc images. It can be seen how the images improve gradually with epochs. It is also observed how in epoch 50 the model focused on generating a texture of the images.
+The next set of results are for the bkl class. This class took the longest for the model to train. And the results do not show very amazing results. The only way to enable the model to perform better would be to increase number of epochs in this case. The images next show the bkl class generation at epochs 5 , 50 and 99 .
+<img src="https://Tahsinmullick.github.io/images/bkl_gan_images.png" alt="bkl_gan_images"></p>
+<h6 id="figure-10--bkl-class-image-generation-result-by-dcgan-at-epochs-5-50-and-99">Figure 10 : BKL class image generation result by DCGAN at epochs 5, 50 and 99</h6>
+<p>We can quickly infer that the performance of DCGAN in generating bkl class has not produced significantly good results in comparison to the bcc class. The epochs also reveal that the model was finding it hard to assign weights that generated images closer to the real images.</p>
+<h4 id="design-of-convolutional-neural-network-cnn-architecture-for-classification-task-">DESIGN OF CONVOLUTIONAL NEURAL NETWORK (CNN) ARCHITECTURE FOR CLASSIFICATION TASK :</h4>
+<p>With the completion of both affine and DCGAN based data augmentation for the bkl and bcc class. The next step was the creation of CNN architecture for classification. The CNN is going to be distinguishing between 3 classes, mel, bkl and bcc.</p>
+<p>To use a CNN, I had the choice of using transfer learning in the process from models trained on larger datasets. However, I felt that this defeats the purpose of evaluation augmentation’s role in improving results. Therefore, I created my own architecture. The CNN network consists of initial convolution layer followed by max pooling with pool size of 2 and dropout of 0.3. There are two intermediate conv layers which all have ReLu.</p>
+<p>The final layer is a dense layer with softmax activation and Adam optimizer. I chose categorical cross entropy for the loss function as this is a 3-class classification task.
+<img src="https://Tahsinmullick.github.io/images/cnn_archi_skinlesion.png" alt="cnn_archi_skinlesion"></p>
+<h6 id="figure-11--cnn-architecture">Figure 11 : CNN architecture</h6>
+<h4 id="experiment-and-evaluation-">EXPERIMENT AND EVALUATION :</h4>
+<p>The experimental design’s goal is to showcase the impact of augmentation on model performance for small dataset. Therefore, it was important to keep in mind that only augmentation process was the factor affecting our dataset.  Other small dataset handling methods in particular transfer learning was not used in the experimentation. A completely new CNN architecture was created for the classification of the images.</p>
+<p>The experiment is divided into 3 parts: 1) Analyze the model’s performance on the existing dataset without any augmentation. 2) Affine transformation augmented dataset classification and 3) DCGAN augmented dataset classification</p>
+<p>The evaluation of the model performance is based on accuracy and loss of the model plotted over the epochs of training the model and validation on the validation set. I used 80:20 split for training and validation respectively.</p>
+<h4 id="result-and-discussion-">RESULT AND DISCUSSION :</h4>
+<p>The results from the three experiments are presented in sequential order. The results reveal that the study supports the hypothesis that larger dataset with balanced classes allow better prediction accuracy.</p>
+<p>The results from the first experiment are presented in the following figure. We see that the loss curve is parallel to the validation. In case of accuracy, we see an initial dip in validation accuracy from 61% to 58%. The training loss goes down with the epoch from 0.82 to 0.76 however the validation loss remains near 0.82.</p>
+<p>The results from the first experiment with the un augmented dataset shows how our model is overfitting the data. The class imbalance is also a contributing factor which can be seen in the prediction images where a lot of the failed predictions are either belonging to mel or bkl class both of which are in majority compared to bcc
+<img src="https://Tahsinmullick.github.io/images/experiment1_unaugmented_skinlesion.png" alt="experiment1_unaugmented_skinlesion"></p>
+<h6 id="figure-12--results-of-experiment-1---classification-on-unaugmented-dataset">Figure 12 : Results of experiment 1 - classification on unaugmented dataset</h6>
+<p>The second experiment in place was generating augmented images via affine transformation. The experimental results show that the both validation accuracy and model accuracy reach 61% and after the 5th epoch the validation accuracy sees a drop. The loss curve for both validation and training decrease together with exception in the 5ht epoch. The loss recorded on the sixth epoch is 0.85 for training and 0.88 for validation data.</p>
+<p>The second experiment with affine augmentation has improved model performance as both the accuracy and loss curve follow almost same trajectory. However, post the 5ht epoch we see that the model begins to overfit. This could be mitigated with early stopping implemented in the code. The model prediction results also show that the model is now able to predict bcc class the minority class in the original dataset better.</p>
+<p><img src="https://Tahsinmullick.github.io/images/experiment2_affineaugmented_skinlesion.png" alt="experiment2_affineaugmented_skinlesion"></p>
+<h6 id="figure-13--results-of-experiment-2---classification-on-affine-augmented-dataset">Figure 13 : Results of experiment 2 - classification on affine augmented dataset</h6>
+<p>The final experiment is conducted with DCGAN generated images. The
+validation accuracy of the model is seen to reach 55% in the 6th epoch. The
+validation accuracy and loss curves show that the augmentation has
+significantly reduced the overfitting. The validation loss is seen to reach
+a value of 0.89 and the training loss is seen to go below 0.88. The DCGAN
+based augmentation has definitely enabled our CNN model to avoid significant
+overfitting. The models accuracy being low could be a result of the CNN
+architecture design. This could definitely be improved with transfer
+learning. However, the aim in this project was to see the impact of augmentation on model performance which has been demonstrated.
+<img src="https://Tahsinmullick.github.io/images/experiment3_dcganaugmented_skinlesion.png" alt="experiment2_affineaugmented_skinlesion"></p>
+<h6 id="figure-14--results-of-experiment-3---classification-on-dcgan-augmented-dataset">Figure 14 : Results of experiment 3 - classification on DCGAN augmented dataset</h6>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://Tahsinmullick.github.io/" >
+    &copy;  Tahsin Mullick 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    <a href="https://twitter.com/tahsinmullick" target="_blank" class="twitter ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div></div>
+  </div>
+</footer>
+
+  </body>
+</html>
