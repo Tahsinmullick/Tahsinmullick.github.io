@@ -24,7 +24,7 @@ redirect_from:
 
 
 ---
-![Illustration of my work](/images/FLMS_complete_view.jpg){: .align-right width="500px"}
+
 ### 🔬 My research interests include:
 
 - Human-centered AI and multimodal machine learning
@@ -36,5 +36,7 @@ redirect_from:
 - Computational behavioral modeling for mental health
 
 - Interpretable, responsible, and privacy-aware AI systems
+
+![Illustration of my work](/images/FLMS_complete_view.jpg){: .align-center width="500px"}
 
 🚀 Let’s connect if you’re looking for someone who bridges cutting-edge AI research, practical data science solutions, and a love for teaching and collaboration.
