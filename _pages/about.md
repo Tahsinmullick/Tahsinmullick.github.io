@@ -15,7 +15,7 @@ redirect_from:
 
 🎓 I earned my Ph.D. in Systems & Information Engineering from the University of Virginia, specializing in human-centered computing, machine learning, deep learning, and multimodal behavioral modeling. My research spans mental health, robotics, and smart systems, with contributions supported by NIH, DARPA, and industry collaborations. Along the way, I’ve authored peer-reviewed publications, delivered conference talks, and hold a U.S. patent for intelligent systems design.
 
-# 🔬 My research interests include:
+### 🔬 My research interests include:
 
 - Human-centered AI and multimodal machine learning
 
