@@ -9,9 +9,19 @@ redirect_from:
 
 ![Illustration of my work](/images/gradcam_fvp.png){: .align-right width="300px"}
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+About Me
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+👋 Hi, I’m Tahsin Uddin Mullick, Ph.D. — a researcher, data scientist, and educator driven by the belief that AI should empower people.
+
+🎓 I earned my Ph.D. in Systems & Information Engineering from the University of Virginia, specializing in human-centered computing, machine learning, deep learning, and multimodal behavioral modeling. My research spans mental health, robotics, and smart systems, with contributions supported by NIH, DARPA, and industry collaborations. Along the way, I’ve authored peer-reviewed publications, delivered conference talks, and hold a U.S. patent for intelligent systems design.
+
+🔬 As a research scientist, I love solving open-ended problems — from interpretable ML for health applications to AI systems for autonomous logistics.
+📊 As a data scientist, I’ve applied ML and data-driven methods in healthcare, mobility, and manufacturing, streamlining workflows and uncovering actionable insights.
+📚 As an educator, I’ve served as a Graduate Teaching Assistant across courses in Deep Learning, Data Science, Applied Mathematics, and Robotics, where I discovered the joy of making complex ideas accessible and inspiring students to see the bigger picture of AI. Mentoring students on projects that turned into real-world applications and publications is one of the most rewarding parts of my journey.
+
+🌍 Whether it’s research, data science, or teaching, my passion is the same: using AI to unlock understanding, create impact, and share knowledge.
+
+🚀 Let’s connect if you’re looking for someone who bridges cutting-edge AI research, practical data science solutions, and a love for teaching and collaboration.
 
 A data-driven personal website
 ======
