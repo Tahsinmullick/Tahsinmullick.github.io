@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-![Illustration of my work](/images/gradcam_fvp.png){: .align-right width="300px"}
+![Illustration of my work](/images/gradcam_fvp2.png){: .align-right width="500px"}
 
 About Me
 
