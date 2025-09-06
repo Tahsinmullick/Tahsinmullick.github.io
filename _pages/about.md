@@ -9,9 +9,6 @@ redirect_from:
 
 ![Illustration of my work](/images/gradcam_fvp2.png){: .align-right width="500px"}
 
-<style>
-li { margin-bottom: 4px; }
-</style>
 
 # About Me
 
@@ -25,9 +22,9 @@ li { margin-bottom: 4px; }
 
 🌍 Whether it’s research, data science, or teaching, my passion is the same: using AI to unlock understanding, create impact, and share knowledge.
 
-🚀 Let’s connect if you’re looking for someone who bridges cutting-edge AI research, practical data science solutions, and a love for teaching and collaboration.
+
 ---
-![Illustration of my work](/images/FLMS_complete_view.jpg){: .align-center width="500px"}
+![Illustration of my work](/images/FLMS_complete_view.jpg){: .align-right width="500px"}
 ### 🔬 My research interests include:
 
 - Human-centered AI and multimodal machine learning
@@ -39,3 +36,5 @@ li { margin-bottom: 4px; }
 - Computational behavioral modeling for mental health
 
 - Interpretable, responsible, and privacy-aware AI systems
+
+🚀 Let’s connect if you’re looking for someone who bridges cutting-edge AI research, practical data science solutions, and a love for teaching and collaboration.
