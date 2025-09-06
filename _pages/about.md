@@ -26,7 +26,7 @@ li { margin-bottom: 4px; }
 🌍 Whether it’s research, data science, or teaching, my passion is the same: using AI to unlock understanding, create impact, and share knowledge.
 
 🚀 Let’s connect if you’re looking for someone who bridges cutting-edge AI research, practical data science solutions, and a love for teaching and collaboration.
-
+---
 ![Illustration of my work](/images/FLMS_complete_view.jpg){: .align-center width="500px"}
 ### 🔬 My research interests include:
 
