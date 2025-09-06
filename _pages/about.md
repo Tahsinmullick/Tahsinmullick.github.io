@@ -27,7 +27,7 @@ li { margin-bottom: 4px; }
 
 🚀 Let’s connect if you’re looking for someone who bridges cutting-edge AI research, practical data science solutions, and a love for teaching and collaboration.
 
-![Illustration of my work](/images/FLMS_complete_view.jpg){: .align-left width="500px"}
+![Illustration of my work](/images/FLMS_complete_view.jpg){: .align-center width="500px"}
 ### 🔬 My research interests include:
 
 - Human-centered AI and multimodal machine learning
