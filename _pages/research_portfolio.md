@@ -7,8 +7,8 @@ author_profile: true
 
 
 
-## Research Interests
-=====
+# Research Interests
+
 
 **Key Areas:** AI for Personalization & Recommendation Systems • Human-Centered AI • Multimodal Machine Learning • Interpretable AI • Behavioral Modeling & User Understanding • Spatio-Temporal Representation Learning • Large-Scale Data Systems • Privacy-Preserving ML
 
@@ -16,8 +16,8 @@ My research focuses on modeling human behavior and preferences using multimodal 
 
 ---
 
-## Research Experience
-=====
+# Research Experience
+
 
 ### Research Assistant | Human AI-Technology Lab, University of Virginia
 **Aug 2020 – July 2025**
@@ -26,7 +26,7 @@ My research focuses on modeling human behavior and preferences using multimodal 
 - Created **ranking framework for sparse multimodal data**, achieving **13% recall improvement** in predicting user state changes—directly transferable to engagement prediction and churn analysis
 - Built **personalized ML pipeline** achieving **9x error reduction** (RMSE 2.83 vs 25.7) through individual user modeling—demonstrating effectiveness of personalization strategies for large-scale systems
 
-![Spatio-temporal representation visualization](placeholder-image-1.png)
+![Spatio-temporal representation visualization](/images/gradcam_fvp.png)
 
 ### Research Assistant | VICTOR Lab, Virginia Tech, UVA
 **Aug 2018 – Aug 2020**
@@ -34,7 +34,7 @@ My research focuses on modeling human behavior and preferences using multimodal 
 - Developed **patented autonomous sorting system** with computer vision, reducing operational workload by **75%**—demonstrating scalable automation for logistics and warehouse optimization
 - Engineered **path planning and computer vision solutions** for autonomous systems in competitive robotics environment
 
-![Autonomous sorting system demonstration](placeholder-image-2.png)
+![Autonomous sorting system demonstration](/images/Patent_Images.png)
 
 ### Research Fellow | Wireless@VT Lab, Virginia Tech
 **Aug 2016 – Aug 2018**
@@ -44,7 +44,7 @@ My research focuses on modeling human behavior and preferences using multimodal 
 
 ---
 
-## Featured Research Contributions
+# Featured Research Contributions
 
 ### Visual Encoding of Time Series: A Voronoi-Based Framework for Behavioral Pattern Discovery
 **Human AI Technology Lab | May 2022 – Ongoing**
@@ -67,7 +67,7 @@ Developed a novel approach to transform raw sequential user data into interpreta
 
 **Status:** Paper submitted to ACM HEALTHCARE 2025
 
-![Voronoi tessellation visualization of behavioral patterns](placeholder-image-3.png)
+![Voronoi tessellation visualization of behavioral patterns](/images/gradcam_fvp2.png)
 
 ---
 
@@ -92,7 +92,7 @@ Developed FLMS, a hybrid framework that addresses the **cold-start problem** in 
 
 **Publication:** JMIR-AI
 
-![FLMS framework architecture and ranking mechanism](placeholder-image-4.png)
+![FLMS framework architecture and ranking mechanism](/images/Figure8_nw.png)
 
 ---
 
@@ -117,7 +117,7 @@ Built an end-to-end system for predicting user state changes using multimodal pa
 
 **Publication:** JMIR Formative Research
 
-![User state prediction pipeline and key behavioral features](placeholder-image-5.png)
+![User state prediction pipeline and key behavioral features](/images/JMIR_pipeline.png)
 
 ---
 
@@ -142,7 +142,7 @@ Designed a decentralized framework integrating AI with blockchain for autonomous
 
 **Publication:** IISE
 
-![Distributed AI architecture and optimization framework](placeholder-image-6.png)
+<!--![Distributed AI architecture and optimization framework](placeholder-image-6.png)-->
 
 ---
 
