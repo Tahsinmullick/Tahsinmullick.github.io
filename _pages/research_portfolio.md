@@ -26,7 +26,7 @@ My research focuses on modeling human behavior and preferences using multimodal 
 - Created **ranking framework for sparse multimodal data**, achieving **13% recall improvement** in predicting user state changes—directly transferable to engagement prediction and churn analysis
 - Built **personalized ML pipeline** achieving **9x error reduction** (RMSE 2.83 vs 25.7) through individual user modeling—demonstrating effectiveness of personalization strategies for large-scale systems
 
-![Spatio-temporal representation visualization](/images/gradcam_fvp.png)
+
 
 ### Research Assistant | VICTOR Lab, Virginia Tech, UVA
 **Aug 2018 – Aug 2020**
@@ -67,7 +67,7 @@ Developed a novel approach to transform raw sequential user data into interpreta
 
 **Status:** Paper submitted to ACM HEALTHCARE 2025
 
-![Voronoi tessellation visualization of behavioral patterns](/images/gradcam_fvp2.png)
+![Spatio-temporal representation visualization](/images/gradcam_fvp.png)
 
 ---
 
@@ -192,4 +192,4 @@ I'm passionate about building AI systems that understand and adapt to individual
 
 ---
 
-*Last Updated: October 2025*
+*Last Updated: September 2025*
