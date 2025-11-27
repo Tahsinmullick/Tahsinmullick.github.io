@@ -48,7 +48,7 @@ Start a conversation with an AI version of me that I created, right here — no 
 
 <div style="margin-top:20px; border: 2px solid #e0e0e0; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
   <iframe 
-      src="https://huggingface.co/spaces/Tahsin88/career_conversations_gpt_app"
+      src="https://tahsin88-career-conversations-gpt-app.hf.space"
       width="100%"
       height="700"
       style="border:none;"
