@@ -52,7 +52,6 @@ Start a conversation with an AI version of me that I created, right here — no 
       width="100%"
       height="700"
       style="border:none;"
-      allow="microphone; camera"
   ></iframe>
 </div>
 
