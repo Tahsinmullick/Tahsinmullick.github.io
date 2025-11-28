@@ -8,13 +8,13 @@ Below is a categorized collection of my portfolio projects, formatted according 
 
 ---
 title: "Building Transformers From Scratch: Self-Attention, Multi-Head Attention & Encoder–Decoder Mechanics"
-excerpt: "A from-scratch PyTorch implementation of core transformer components including self-attention, masked attention, and multi-head attention following the seminal *Attention Is All You Need* paper.<br/><img src='C:\Users\mulli\OneDrive\Desktop\Projects\Tahsinmullick.github.io\images\port_self_attention_vs_mulihead.png'>"
+excerpt: "A from-scratch PyTorch implementation of core transformer components including self-attention, masked attention, and multi-head attention following the seminal *Attention Is All You Need* paper.<br/><img src='/images/port_self_attention_vs_mulihead.png'>"
 collection: portfolio
 ---
 
 ---
 title: "Character-Level GPT: Lightweight GPT-Style Transformer"
-excerpt: "A nanoGPT-inspired character-level transformer model to study tokenization, autoregressive decoding, and small-data generative modeling behavior.<br/><img src='C:\Users\mulli\OneDrive\Desktop\Projects\Tahsinmullick.github.io\images\port_scratch_chatgpt.png'>"
+excerpt: "A nanoGPT-inspired character-level transformer model to study tokenization, autoregressive decoding, and small-data generative modeling behavior.<br/><img src='/images/port_scratch_chatgpt.png'>"
 collection: portfolio
 ---
 
