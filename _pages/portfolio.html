@@ -5,8 +5,6 @@ permalink: /portfolio/
 author_profile: true
 ---
 
-{% include base_path %}
-
 {% assign items = site.portfolio | sort: "order" %}
 <ul class="portfolio-list">
   {% for p in items %}
@@ -15,6 +13,11 @@ author_profile: true
   </li>
   {% endfor %}
 </ul>
+
+
+
+{% include base_path %}
+
 
 {% for post in site.portfolio %}
 {% include archive-single.html %}
