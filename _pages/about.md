@@ -44,7 +44,7 @@ redirect_from:
 ## 🔥 Talk With My Digital Twin 👇
 
 Curious about my research interests, technical skills, and the projects I'm working on?  
-Start a conversation with an AI version of me that I created, right here — no need to open a new tab.
+Start a conversation with an AI version of me that I built with gpt-4o-mini in backend and gradio for UI , right here — no need to open a new tab.
 
 <div style="margin-top:20px; border: 2px solid #e0e0e0; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
   <iframe 
