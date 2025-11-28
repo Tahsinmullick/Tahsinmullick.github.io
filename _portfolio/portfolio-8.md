@@ -6,3 +6,9 @@ order: 8
 ---
 
 
+Siamese Networks • Contrastive Loss • Healthcare AI
+
+
+Designed Siamese neural network to detect anomalies in patient sensor activity.
+
+Applied data balancing and signal preprocessing to achieve 98% detection accuracy.

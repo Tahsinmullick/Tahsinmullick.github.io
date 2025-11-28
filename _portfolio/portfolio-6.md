@@ -4,4 +4,11 @@ excerpt: "A 98%-accuracy human activity recognition pipeline using classical ML 
 collection: portfolio
 order: 6
 ---
+Deep Learning • Human-Centered AI • Time-Series Classification
+[🔗 GitHub Repo](https://github.com/Tahsinmullick/time_series_classification/tree/main)
 
+Built full ML pipeline for activity recognition using mobile sensor data.
+
+Achieved 98% accuracy with Conv-LSTM by capturing spatiotemporal dependencies.
+
+Developed decision visualization tools for model interpretability—aligning with human-centered AI practices.

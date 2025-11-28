@@ -5,3 +5,9 @@ collection: portfolio
 order: 4
 ---
 
+RAG • Vector Databases • LLM Applications
+[🔗 GitHub Repo](https://github.com/Tahsinmullick/google_gemini_generativeAI_app/tree/main)
+
+Engineered full RAG pipeline using Google Gemini, Chroma DB (metadata-aware embeddings), and LangGraph for iterative retrieval refinement.
+
+Improved answer grounding and hallucination-resistance—skills aligned with Anthropic’s focus on safe and verifiable LLM reasoning.

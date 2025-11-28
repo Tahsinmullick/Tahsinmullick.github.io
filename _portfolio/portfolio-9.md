@@ -5,5 +5,10 @@ collection: portfolio
 order: 9
 ---
 
+GANs • Computer Vision • Medical Imaging
 
+
+Trained DCGAN on 2,726 dermatoscopic images to generate realistic synthetic images.
+
+Improved classifier performance by 15% through reduced overfitting and class imbalance correction.
 
