@@ -7,8 +7,15 @@ author_profile: true
 
 {% include base_path %}
 
+{% assign items = site.portfolio | sort: "order" %}
+<ul class="portfolio-list">
+  {% for p in items %}
+  <li>
+    <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
 
 {% for post in site.portfolio %}
-  {% include archive-single.html %}
+{% include archive-single.html %}
 {% endfor %}
-
