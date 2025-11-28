@@ -1,7 +1,8 @@
 ---
-title: "GAN-Based Data Augmentation for Skin Lesion Classification"
+title: "10.GAN-Based Data Augmentation for Skin Lesion Classification"
 excerpt: "A DCGAN-based data augmentation pipeline for dermatoscopic images, improving model accuracy by 15% and reducing overfitting through realistic synthetic image generation.<br/><img src='/images/port_gan_skin.png'>"
 collection: portfolio
+order: 9
 ---
 
 
