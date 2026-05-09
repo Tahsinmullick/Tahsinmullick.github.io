@@ -57,5 +57,5 @@ Start a conversation with an AI version of me that I built with gpt-4o-mini in b
 
 > 💬 **Ask about my research, background, skills, and current projects — anything you’d like to know!**
 
-> ⚠️ **Disclaimer:** This AI reflects my knowledge and experience, but it may not always be perfect.  
+> ⚠️ **Disclaimer:** This AI reflects my experience, but it may not always be perfect.  
 If anything seems unclear or confusing, **please feel free to reach out and ask me directly.**
