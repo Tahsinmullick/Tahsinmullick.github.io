@@ -52,9 +52,9 @@ Teaching Expereience
 ======
 * Instructor – AP Computer Science & Robotics – The Montgomery Academy
 
-  •	Teaching AP Computer Science Principles (Python) & AP Computer Science A (Java) to 40+ students.
-  •	Leading AI-integration initiatives to prepare students and teachers for responsible use of AI in pedagogy.
-  •	Mentoring students toward college-level research projects and competitions.
+  *	Teaching AP Computer Science Principles (Python) & AP Computer Science A (Java) to 40+ students.
+  *	Leading AI-integration initiatives to prepare students and teachers for responsible use of AI in pedagogy.
+  *	Mentoring students toward college-level research projects and competitions.
   Tenure: Aug 2025 - Present
 
 * Graduate Teaching Assistant - University of Virginia
@@ -87,18 +87,18 @@ Teaching Expereience
 * Instructor - North South University
 
  * Digital Signal Processing (EEE 471) | Enrollment: 70
-    •	Designed and conducted MATLAB-based labs for senior undergraduates on FIR filters, convolution and quantization 
+    *	Designed and conducted MATLAB-based labs for senior undergraduates on FIR filters, convolution and quantization 
     Tenure: Oct 2012 – Aug 2014
 
   * Control System Design (EEE 321) | Enrollment: 100
-    •	Designed and led junior undergraduates through hands-on MATLAB/Simulink labs on LTI control systems
-    •	Tenure: Oct 2012 – Aug 2014
+    *	Designed and led junior undergraduates through hands-on MATLAB/Simulink labs on LTI control systems
+    Tenure: Oct 2012 – Aug 2014
 
   * Undergraduate Teaching Assistant - North South University
 
     * Probability and Statistics (MAT 361)
       •	Instructed senior undergraduates on probability theory, descriptive statistics, hypothesis testing, and statistical inference.
-      Tenure: Jan 2010 – Aug 2012
+    Tenure: Jan 2010 – Aug 2012
 
 
 

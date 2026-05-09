@@ -12,7 +12,7 @@ redirect_from:
 
 # About Me
 
-👋 Hi, I’m Tahsin Uddin Mullick, Ph.D. — a researcher, data scientist, and educator driven by the belief that AI should empower people.
+👋 Hi, I’m Tahsin Mullick, Ph.D.,  a researcher, data scientist, and educator driven by the belief that AI should empower people.
 
 🎓 I earned my Ph.D. in Systems & Information Engineering from the University of Virginia, specializing in human-centered computing, machine learning, deep learning, and multimodal behavioral modeling. My research spans mental health, robotics, and smart systems, with contributions supported by NIH, DARPA, and industry collaborations. Along the way, I’ve authored peer-reviewed publications, delivered conference talks, and hold a U.S. patent for intelligent systems design.
 
@@ -29,22 +29,24 @@ redirect_from:
 
 - Human-centered AI and multimodal machine learning
 
-- Time-series modeling from mobile and wearable sensors
-
-- Generative AI and large language models (LLMs)
+- Time-series modeling from mobile and wearable sensors data
 
 - Computational behavioral modeling for mental health
 
-- Interpretable, responsible, and privacy-aware AI systems
+- Generative AI and large language models (LLMs)
+
+- Interpretable and responsible AI systems
+
+
 
 ![Illustration of my work](/images/FLMS_complete_view.jpg){: .align-center width="500px"}
 
-🚀 Let’s connect if you’re looking for someone who bridges cutting-edge AI research, practical data science solutions, and a love for teaching and collaboration.
+🚀 Let's connect if you’re looking to collaborate on AI research and education.
 
 ## 🔥 Talk With My Digital Twin 👇
 
 Curious about my research interests, technical skills, and the projects I'm working on?  
-Start a conversation with an AI version of me that I built with gpt-4o-mini in backend and gradio for UI , right here — no need to open a new tab.
+Start a conversation with an AI version of me that I built with gpt-4o-mini in backend and gradio for UI , right here!
 
 <div style="margin-top:20px; border: 2px solid #e0e0e0; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
   <iframe 
