@@ -14,7 +14,7 @@ redirect_from:
 
 👋 Hi, I’m Tahsin Mullick, Ph.D.,  a researcher, data scientist, and educator driven by the belief that AI should empower people.
 
-🎓 I earned my Ph.D. in Systems & Information Engineering from the University of Virginia, specializing in human-centered computing, machine learning, deep learning, and multimodal behavioral modeling. My research spans mental health, robotics, and smart systems, with contributions supported by NIH, DARPA, and industry collaborations. Along the way, I’ve authored peer-reviewed publications, delivered conference talks, and hold a U.S. patent for intelligent systems design.
+🎓 I earned my Ph.D. in Systems Engineering from the University of Virginia, specializing in human-centered computing, machine learning, deep learning, and multimodal behavioral modeling. My research spans mental health, robotics, and smart systems, with contributions supported by NIH, DARPA, and industry collaborations. Along the way, I’ve authored peer-reviewed publications, delivered conference talks, and hold a U.S. patent for intelligent systems design.
 
 📊 As a Researcher/Data Scientist, I’ve applied ML and data-driven methods in healthcare, mobility, and manufacturing, streamlining workflows and uncovering actionable insights.
 
